@@ -1,0 +1,22 @@
+project:
+  machine_name: d9contrib
+  prefix: D9C
+  human_name: 'Drupal 9 contrib project'
+  profile:
+    name: minimal
+docroot: ${repo.root}/web
+validate:
+  acsf: false
+  deprecation:
+    modules: true
+    theme: true
+git:
+  default_branch: master
+cm:
+  stratagy: core-only
+  core:
+    path: ../config
+    install_from_config: true
+drupal:
+  account.name: admin
+  account.mail: no-reply@example.com
