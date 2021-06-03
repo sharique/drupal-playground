@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0cfa03ab61df5419d9249184c6c8aa47",
+    "content-hash": "7c4e313f035f9173e22c0c82149daca5",
     "packages": [
         {
             "name": "acquia/blt",
@@ -3138,6 +3138,72 @@
             ]
         },
         {
+            "name": "drupal/graphql",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/graphql.git",
+                "reference": "8.x-4.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/graphql-8.x-4.1.zip",
+                "reference": "8.x-4.1",
+                "shasum": "c37587b95e78b62b099bfee128e0a5d634696335"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "drupal/typed_data": "*",
+                "php": ">=7.2",
+                "webonyx/graphql-php": "^14.5.0"
+            },
+            "require-dev": {
+                "drupal/node-node": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.1",
+                    "datestamp": "1622655866",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "fubhy",
+                    "homepage": "https://www.drupal.org/user/761344"
+                },
+                {
+                    "name": "hideaway",
+                    "homepage": "https://www.drupal.org/user/741876"
+                },
+                {
+                    "name": "joaogarin",
+                    "homepage": "https://www.drupal.org/user/612814"
+                },
+                {
+                    "name": "klausi",
+                    "homepage": "https://www.drupal.org/user/262198"
+                },
+                {
+                    "name": "pmelab",
+                    "homepage": "https://www.drupal.org/user/555322"
+                }
+            ],
+            "description": "Exposes your Drupal data model through a GraphQL schema.",
+            "homepage": "http://drupal.org/project/graphql",
+            "support": {
+                "source": "https://git.drupalcode.org/project/graphql"
+            }
+        },
+        {
             "name": "drupal/jsonapi_menu_items",
             "version": "1.2.1",
             "source": {
@@ -3255,6 +3321,120 @@
             ],
             "support": {
                 "source": "https://git.drupalcode.org/project/jsonapi_resources"
+            }
+        },
+        {
+            "name": "drupal/typed_data",
+            "version": "1.0.0-alpha5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/typed_data.git",
+                "reference": "8.x-1.0-alpha5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/typed_data-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "44cfaf8f6d6bc0b876e88a8b9d473799818d395f"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1591397037",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TR",
+                    "homepage": "https://www.drupal.org/user/202830"
+                },
+                {
+                    "name": "fago",
+                    "homepage": "https://www.drupal.org/user/16747"
+                }
+            ],
+            "description": "Extends the core Typed Data API with new APIs and features.",
+            "homepage": "https://www.drupal.org/project/typed_data",
+            "support": {
+                "source": "https://git.drupalcode.org/project/typed_data",
+                "issues": "https://www.drupal.org/project/issues/typed_data"
+            }
+        },
+        {
+            "name": "drupal/zurb_foundation",
+            "version": "dev-6.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/zurb-foundation.git",
+                "reference": "cff12d9e4e73ac308f76cc023f501706b9e4aff8"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-6.x": "6.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-6.0-alpha6+9-dev",
+                    "datestamp": "1618421403",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Kevin Quillen (kevinquillen)",
+                    "homepage": "https://www.drupal.org/u/kevinquillen",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Samuel Mortensen (samuelmortenson)",
+                    "homepage": "https://www.drupal.org/u/samuelmortenson",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Simone Wood (sim_1)",
+                    "homepage": "https://www.drupal.org/u/sim_1",
+                    "role": "Co-Maintainer"
+                },
+                {
+                    "name": "Dan Feidt (HongPong)",
+                    "homepage": "https://www.drupal.org/u/hongpong",
+                    "role": "Co-Maintainer"
+                },
+                {
+                    "name": "sim_1",
+                    "homepage": "https://www.drupal.org/user/3515959"
+                }
+            ],
+            "description": "Base Drupal theme based on Zurb Foundation 6.x.",
+            "homepage": "http://drupal.org/project/zurb_foundation",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/zurb_foundation",
+                "issues": "http://drupal.org/project/issues/zurb_foundation"
             }
         },
         {
@@ -8072,6 +8252,72 @@
             "time": "2015-12-17T08:42:14+00:00"
         },
         {
+            "name": "webonyx/graphql-php",
+            "version": "v14.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webonyx/graphql-php.git",
+                "reference": "7149ebfb0ba4132ca3cc5ef943b8e2ece58a5d5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webonyx/graphql-php/zipball/7149ebfb0ba4132ca3cc5ef943b8e2ece58a5d5b",
+                "reference": "7149ebfb0ba4132ca3cc5ef943b8e2ece58a5d5b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.1||^8.0"
+            },
+            "require-dev": {
+                "amphp/amp": "^2.3",
+                "doctrine/coding-standard": "^6.0",
+                "nyholm/psr7": "^1.2",
+                "phpbench/phpbench": "^0.16.10",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "0.12.82",
+                "phpstan/phpstan-phpunit": "0.12.18",
+                "phpstan/phpstan-strict-rules": "0.12.9",
+                "phpunit/phpunit": "^7.2|^8.5",
+                "psr/http-message": "^1.0",
+                "react/promise": "2.*",
+                "simpod/php-coveralls-mirror": "^3.0",
+                "squizlabs/php_codesniffer": "3.5.4"
+            },
+            "suggest": {
+                "psr/http-message": "To use standard GraphQL server",
+                "react/promise": "To leverage async resolving on React PHP platform"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "GraphQL\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP port of GraphQL reference implementation",
+            "homepage": "https://github.com/webonyx/graphql-php",
+            "keywords": [
+                "api",
+                "graphql"
+            ],
+            "support": {
+                "issues": "https://github.com/webonyx/graphql-php/issues",
+                "source": "https://github.com/webonyx/graphql-php/tree/v14.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/webonyx-graphql-php",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-06-01T10:24:56+00:00"
+        },
+        {
             "name": "zumba/amplitude-php",
             "version": "1.0.2",
             "source": {
@@ -10075,6 +10321,7 @@
     "stability-flags": {
         "drupal/gin_lb": 10,
         "drupal/gin_toolbar": 10,
+        "drupal/zurb_foundation": 20,
         "mikemadison13/blt-lando": 20
     },
     "prefer-stable": true,

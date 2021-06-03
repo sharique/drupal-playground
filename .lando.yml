@@ -6,7 +6,7 @@ config:
   database: mariadb
 services:
   appserver:
-    xdebug: "debug,develop"
+    xdebug: "debug"
     config:
       php: .vscode/php.ini
 tooling:

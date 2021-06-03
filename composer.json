@@ -28,7 +28,9 @@
         "drupal/gin": "^3.0",
         "drupal/gin_lb": "^1.0@beta",
         "drupal/gin_toolbar": "^1.0@beta",
-        "drupal/jsonapi_menu_items": "^1.2"
+        "drupal/graphql": "^4.1",
+        "drupal/jsonapi_menu_items": "^1.2",
+        "drupal/zurb_foundation": "6.x-dev"
     },
     "conflict": {
         "drupal/drupal": "*"
