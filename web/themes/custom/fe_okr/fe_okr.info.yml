@@ -1,0 +1,6 @@
+name: FE OKR theme
+description: "Custom theme developed FE learning"
+core: 8.x
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: classy
