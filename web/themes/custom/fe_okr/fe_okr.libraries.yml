@@ -1,0 +1,6 @@
+global:
+  version: VERSION
+  css:
+    base:
+      css/foundation.css: {}
+      css/style.css: {}
