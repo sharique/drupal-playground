@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "FE training theme.",
   "scripts": {
-    "start": "gulp",
+    "start": "npm run serve",
     "watch": "gulp watch",
-    "postinstall": "node_modules/.bin/rimraf ./node_modules/**/*.info"
+    "postinstall": "node_modules/.bin/rimraf ./node_modules/**/*.info",
+    "build": "patternlab build --config ./patternlab-config.json",
+    "build:uikit": "cross-env-shell PL_CONFIG_PATH='${INIT_CWD}/.patternlabrc.js' npm run build --prefix node_modules/@pattern-lab/uikit-workshop -- --patternlabrc '$PL_CONFIG_PATH'",
+    "dev": "node ./node_modules/@pattern-lab/uikit-workshop/build-tools.js",
+    "help": "patternlab --help",
+    "install": "patternlab install --config ./patternlab-config.json",
+    "serve": "patternlab serve --config ./patternlab-config.json",
+    "version": "patternlab --version"
   },
   "devDependencies": {
     "@babel/core": "^7.10.3",
@@ -28,5 +35,10 @@
     "gulp-util": "^3.0.8",
     "merge-stream": "^1.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@pattern-lab/cli": "^5.14.3",
+    "@pattern-lab/core": "^5.14.3",
+    "@pattern-lab/engine-twig-php": "^5.14.3",
+    "@pattern-lab/uikit-workshop": "^5.14.3"
+  }
 }
