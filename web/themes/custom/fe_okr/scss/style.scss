@@ -1,3 +1,7 @@
-body{
+@import '../source/_patterns/layout.scss';
+@import '../source/_patterns/menu.scss';
+
+body {
   background: white;
+  font-family: "Source Sans Pro";
 }

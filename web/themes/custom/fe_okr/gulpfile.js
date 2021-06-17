@@ -20,7 +20,7 @@ const paths = {
   }
 }
 // Compile sass into CSS & auto-inject into browsers
-function styles () {
+function styles() {
   return gulp.src([paths.scss.src, paths.scss.print])
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -32,15 +32,21 @@ function styles () {
     .pipe(gulp.dest(paths.scss.dest))
 }
 // Move the javascript files into our js folder
-function js () {
+function js() {
   return gulp.src([paths.js.src])
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(minify({noSource: true}))
+    .pipe(minify({ noSource: true }))
     .pipe(gulp.dest(paths.js.dest))
 }
+function watch() {
+  gulp.watch(paths.scss.src, gulp.series('styles'));
+  gulp.watch('./source/_patterns/*.scss', gulp.series('styles'));
+}
+
 const build = gulp.series(styles, js)
 exports.styles = styles
 exports.js = js
+exports.watch = watch
 exports.default = build
