@@ -43,6 +43,8 @@ function js() {
 function watch() {
   gulp.watch(paths.scss.src, gulp.series('styles'));
   gulp.watch('./source/_patterns/*.scss', gulp.series('styles'));
+  gulp.watch('./source/_patterns/*/*.scss', gulp.series('styles'));
+  gulp.watch('./source/_patterns/*/*/*.scss', gulp.series('styles'));
 }
 
 const build = gulp.series(styles, js)
