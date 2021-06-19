@@ -1,6 +1,12 @@
-.is_active {
-  a {
-    color: #000;
+nav {
+  ul.menu {
+    a {
+      color: $white;
+    }
+    a.is-active,
+    a:hover {
+      color: $yellow;
+    } 
   }
 }
 

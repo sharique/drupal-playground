@@ -1,0 +1,22 @@
+uuid: 921655c4-c0d4-4271-b2e3-10dc4201677c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fe_okr
+_core:
+  default_config_hash: BL6Gcw5Us0zai1ADadlNYLxlEblMedc_3C3lF0PjtCE
+id: fe_okr_content
+theme: fe_okr
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

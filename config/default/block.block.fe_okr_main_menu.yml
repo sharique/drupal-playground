@@ -1,0 +1,27 @@
+uuid: 6347fa04-8676-4e43-bc03-dd32b352d750
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - fe_okr
+_core:
+  default_config_hash: _uH7wnTwQN9LR9emIpwucAsiGiqgy6xNxBzEjrhF4SM
+id: fe_okr_main_menu
+theme: fe_okr
+region: header
+weight: -2
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: bc31d0b2-dbf1-4cb1-9625-e1a3859856fe
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fe_okr
+_core:
+  default_config_hash: ra6f6AXShbzKP9r6uPc9cfCx2KuomlPqmt1WWPUuDf0
+id: fe_okr_primary_local_tasks
+theme: fe_okr
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }
