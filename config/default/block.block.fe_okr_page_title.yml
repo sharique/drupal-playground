@@ -1,0 +1,20 @@
+uuid: 042c81a4-ef1a-485b-88dd-c35a95c4eaa8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fe_okr
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: fe_okr_page_title
+theme: fe_okr
+region: highlighted
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

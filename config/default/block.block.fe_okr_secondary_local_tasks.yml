@@ -1,0 +1,22 @@
+uuid: 58ff43e6-af78-4b0e-af49-afbd929049bc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - fe_okr
+_core:
+  default_config_hash: V7GM1m6Qh500cQE7LWZV8lRuwLqXdjR0S2kSk8pEv6g
+id: fe_okr_secondary_local_tasks
+theme: fe_okr
+region: highlighted
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }

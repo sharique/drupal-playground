@@ -1,0 +1,25 @@
+uuid: f00cbd4c-8444-4d9a-9a14-2146a9a5ad6c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - fe_okr
+_core:
+  default_config_hash: sYjScJ6uW1UvGZ-G3AtTcZmPoOiQJtndHqamm8FAFgU
+id: fe_okr_site_branding
+theme: fe_okr
+region: header
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }
