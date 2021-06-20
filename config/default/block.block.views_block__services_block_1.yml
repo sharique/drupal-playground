@@ -1,0 +1,29 @@
+uuid: 2a61a697-b785-416b-a883-5011b53a53ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.services
+  module:
+    - system
+    - views
+  theme:
+    - fe_okr
+id: views_block__services_block_1
+theme: fe_okr
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:services-block_1'
+settings:
+  id: 'views_block:services-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

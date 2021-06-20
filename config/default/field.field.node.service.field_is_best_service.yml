@@ -1,0 +1,23 @@
+uuid: e375be82-a13e-43cf-84d6-37ecc6e1a71c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_is_best_service
+    - node.type.service
+id: node.service.field_is_best_service
+field_name: field_is_best_service
+entity_type: node
+bundle: service
+label: 'Is best service'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
