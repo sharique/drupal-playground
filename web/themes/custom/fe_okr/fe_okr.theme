@@ -11,6 +11,7 @@
 function fe_okr_preprocess_block__system_branding_block(&$variables) {
   $variables['attributes']['class'][] = "cell small-3";
 }
+
 /**
  * Implements hook_preprocess_HOOK() for block--system-menu-block.html.twig.
  */

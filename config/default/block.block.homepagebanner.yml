@@ -1,0 +1,30 @@
+uuid: 97beae95-0e8d-445c-92e2-301ff87bd250
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:cta_block:f7170a5e-e002-40ae-8722-13ddb82ca9fd'
+  module:
+    - block_content
+    - system
+  theme:
+    - fe_okr
+id: homepagebanner
+theme: fe_okr
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:f7170a5e-e002-40ae-8722-13ddb82ca9fd'
+settings:
+  id: 'block_content:f7170a5e-e002-40ae-8722-13ddb82ca9fd'
+  label: 'Homepage Banner'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: two_column
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
