@@ -1,0 +1,126 @@
+uuid: f4d2d14f-ba39-434e-b178-0f76c6a26b1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_block
+    - core.entity_view_mode.block_content.two_column
+    - field.field.block_content.cta_block.body
+    - field.field.block_content.cta_block.field_image
+    - field.field.block_content.cta_block.field_link
+  module:
+    - field_group
+    - image
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_div_row:
+      children:
+        - group_div_col_5
+        - group_div_col_7
+      parent_name: group_grid_container
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'grid-x grid-margin-x'
+      label: 'grid-x grid-margin-x'
+    group_div_col_5:
+      children:
+        - body
+        - field_link
+      parent_name: group_div_row
+      weight: 21
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'small-5 cell'
+      label: 'small-5 cell'
+    group_div_col_7:
+      children:
+        - field_image
+      parent_name: group_div_row
+      weight: 22
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'small-7 cell'
+      label: 'small-7 cell'
+    group_grid_container:
+      children:
+        - group_div_row
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: grid-container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: grid-container
+id: block_content.cta_block.two_column
+targetEntityType: block_content
+bundle: cta_block
+mode: two_column
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 21
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 22
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 22
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true

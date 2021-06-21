@@ -1,20 +1,20 @@
-uuid: 653063e4-47b1-46a2-a799-0de5cb29d281
+uuid: fe0bc00f-b42c-484e-bf14-897efde5085c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.service
+    - block_content.type.cta_block
+    - field.storage.block_content.field_image
   module:
     - image
-id: node.service.field_image
+id: block_content.cta_block.field_image
 field_name: field_image
-entity_type: node
-bundle: service
+entity_type: block_content
+bundle: cta_block
 label: Image
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
