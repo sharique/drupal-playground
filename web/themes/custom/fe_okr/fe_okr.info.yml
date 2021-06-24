@@ -9,7 +9,7 @@ libraries:
  - fe_okr/global
 
 # Regions are output in the page.html.twig
-
+logo: logo.png
 regions:
   header: Header
   help: Help
