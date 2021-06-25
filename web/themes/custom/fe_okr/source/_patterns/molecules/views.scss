@@ -25,3 +25,47 @@
     }
   }
 }
+
+.view-header {
+  h6 {
+    font-size: 14px;
+    &::after {
+      content: "";
+      width: 120px;
+      height: 1px;
+      display: inline-block;
+      background: $red_line;
+      margin: 4px 10px;
+    }
+  }
+}
+
+.views-element-container{
+  padding: 60px 0;
+}
+
+.block-views-blocktestimonials-block-1 {
+  background-color: $light_grey;
+  article {
+    box-shadow: 0px 0px 20px 0px rgba(11, 35, 65, 0.1);
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem;
+    .job-title {
+      color: $grey;
+    }
+    h3 {
+      font-weight: 700;
+    }
+  }
+}
+
+.owl-theme .owl-controls {
+  .owl-page span {
+    border: 1px solid $red;
+    background-color: $white;
+  }
+  .owl-page.active span {
+    background-color: $red;
+  }
+}
