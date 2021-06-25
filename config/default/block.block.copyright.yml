@@ -2,10 +2,6 @@ uuid: 20abd0d7-1332-489e-aa0d-42c2f4323a89
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:custom_block:1e539cc3-cff7-4261-8e9f-9c9dc22226ff'
-  module:
-    - block_content
   theme:
     - fe_okr
 id: copyright

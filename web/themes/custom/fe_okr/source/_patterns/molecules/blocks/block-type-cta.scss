@@ -1,0 +1,71 @@
+.block-type-cta-block {
+  &.two_column {
+    background: #0c0f38;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 90px;
+  }
+  .field--name-body {
+    h1 {
+      color: $white;
+      font-size: 60px;
+      line-height: 80px;
+      padding-bottom: 25px;
+      font-weight: bold;
+    }
+    .yellow-text {
+      color: $yellow;
+      font-size: 40px;
+      line-height: 35px;
+      font-weight: bold;
+    }
+    p {
+      color: $white;
+      font-size: 17px;
+      line-height: 28px;
+      padding: 40px 0;
+    }
+  }
+  a {
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+  }
+
+  &.default {
+    padding-top: 90px;
+    text-align: center;
+    h2 {
+      font-size: 45px;
+      color: $purpule;
+      line-height: 40px;
+      font-weight: bold;
+      padding: 0 0 60px 0;
+    }
+    p {
+      color: $purpule;
+      font-size: 17px;
+      line-height: 28px;
+      padding: 40px 50px;
+    }
+    a {
+      font-size: 16px;
+      background-color: #000;
+      color: $white;
+      padding: 10px 0px;
+      width: 100%;
+      max-width: 190px;
+      text-align: center;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+}

@@ -11,7 +11,7 @@ _core:
 id: fe_okr_content
 theme: fe_okr
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: system_main_block
 settings:

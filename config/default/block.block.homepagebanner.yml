@@ -12,7 +12,7 @@ dependencies:
 id: homepagebanner
 theme: fe_okr
 region: content
-weight: 0
+weight: -6
 provider: null
 plugin: 'block_content:f7170a5e-e002-40ae-8722-13ddb82ca9fd'
 settings:
