@@ -12,6 +12,23 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+              "name": "kenwheeler/slick",
+              "version": "1.8.0",
+              "source": {
+                "url": "https://github.com/kenwheeler/slick.git",
+                "type": "git",
+                "reference": "1.8.0"
+              },
+              "type": "drupal-library"
+            }
+          },
+          {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         }
     ],
     "require": {
@@ -31,9 +48,12 @@
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/graphql": "^4.1",
         "drupal/jsonapi_menu_items": "^1.2",
+        "drupal/owlcarousel": "^1.0@beta",
         "drupal/slick": "^2.3",
         "drupal/slick_views": "^2.4",
-        "drupal/zurb_foundation": "6.x-dev"
+        "drupal/zurb_foundation": "6.x-dev",
+        "kenwheeler/slick": "^1.8",
+        "vardot/blazy": "1.8.2.1"
     },
     "conflict": {
         "drupal/drupal": "*"

@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.testimonial.body
     - field.field.node.testimonial.field_image
     - field.field.node.testimonial.field_job_title
+    - image.style.medium
     - node.type.testimonial
   module:
     - image
@@ -19,31 +20,27 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
   field_image:
-    weight: 102
-    label: above
+    weight: 1
+    label: hidden
     settings:
-      image_style: ''
+      image_style: medium
       image_link: ''
     third_party_settings: {  }
     type: image
     region: content
   field_job_title:
-    weight: 103
-    label: above
+    weight: 2
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
     region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
-    region: content
 hidden:
   langcode: true
+  links: true

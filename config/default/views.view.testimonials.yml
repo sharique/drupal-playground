@@ -3,15 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.storage.node.body
     - field.storage.node.field_image
     - field.storage.node.field_job_title
-    - image.style.slick_media
+    - image.style.medium
     - node.type.testimonial
   module:
     - image
     - node
-    - slick_views
+    - owlcarousel
     - text
     - user
 id: testimonials
@@ -54,58 +55,44 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       pager:
-        type: some
+        type: none
         options:
-          items_per_page: 2
           offset: 0
       style:
-        type: slick
+        type: owlcarousel
         options:
-          vanilla: false
-          optionset: default
-          skin: ''
-          layout: ''
-          caption:
-            body: body
-            field_job_title: field_job_title
-            title: '0'
-            field_image: '0'
-          optionset_thumbnail: ''
-          skin_thumbnail: ''
-          thumbnail_position: ''
-          thumbnail_caption: ''
-          grid: null
-          grid_medium: null
-          grid_small: null
-          visible_items: null
-          preserve_keys: false
-          image: field_image
-          thumbnail: field_image
-          overlay: ''
-          title: title
-          link: title
-          class: ''
-          id: ''
-          override: false
-          overridables:
-            arrows: '0'
-            autoplay: '0'
-            dots: '0'
-            draggable: '0'
-            infinite: '0'
-            mouseWheel: '0'
-            randomize: '0'
-            variableWidth: '0'
-          cache: 0
-          current_view_mode: block_1
-          thumbnail_effect: ''
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          items: '2'
+          itemsDesktop: '[1199,4]'
+          itemsDesktopSmall: '[979,3]'
+          itemsTablet: '[768,2]'
+          itemsMobile: '[479,1]'
+          singleItem: 0
+          itemsScaleUp: 0
+          slideSpeed: '200'
+          paginationSpeed: '800'
+          rewindSpeed: '1000'
+          autoPlay: 0
+          stopOnHover: 0
+          navigation: 0
+          prevText: prev
+          nextText: next
+          rewindNav: 1
+          scrollPerPage: 0
+          pagination: 1
+          paginationNumbers: 0
+          responsive: 1
+          responsiveRefreshRate: '200'
+          mouseDrag: 1
+          touchDrag: 1
+          transitionStyle: fade
       row:
-        type: fields
+        type: 'entity:node'
         options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
+          relationship: none
+          view_mode: full
       fields:
         title:
           id: title
@@ -268,7 +255,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: slick_media
+            image_style: medium
             image_link: ''
           group_column: ''
           group_columns: {  }
@@ -386,13 +373,27 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Testimonials
-      header: {  }
+      title: '<none>'
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h6>Testimonials </h6>\r\n<h2>\r\nTestimonials\r\n</h2>"
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: grid-container
     cache_metadata:
       max-age: -1
       contexts:

@@ -2,7 +2,6 @@ module:
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
-  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -25,12 +24,10 @@ module:
   menu_ui: 0
   node: 0
   options: 0
+  owlcarousel: 0
   page_cache: 0
   path: 0
   path_alias: 0
-  slick: 0
-  slick_ui: 0
-  slick_views: 0
   system: 0
   taxonomy: 0
   text: 0

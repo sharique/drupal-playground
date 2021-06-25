@@ -322,12 +322,13 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      title: 'Check our Services'
+      title: '<none>'
       defaults:
         title: false
         fields: false
         filters: false
         filter_groups: false
+        header: false
       path: service
       menu:
         type: normal
@@ -582,6 +583,20 @@ display:
         operator: AND
         groups:
           1: AND
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: "<h6>Portfolio </h6>\r\n<h2>\r\nBest Services\r\n</h2>"
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
