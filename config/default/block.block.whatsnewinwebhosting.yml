@@ -1,0 +1,30 @@
+uuid: 8e49d22f-489f-4939-8ca5-c8139b6a1a48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:cta_block:f7f9ea2c-16c8-49d0-87cb-f2b7c7d0777a'
+  module:
+    - block_content
+    - system
+  theme:
+    - fe_okr
+id: whatsnewinwebhosting
+theme: fe_okr
+region: content
+weight: -5
+provider: null
+plugin: 'block_content:f7f9ea2c-16c8-49d0-87cb-f2b7c7d0777a'
+settings:
+  id: 'block_content:f7f9ea2c-16c8-49d0-87cb-f2b7c7d0777a'
+  label: 'What’s New In Web Hosting'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: default
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

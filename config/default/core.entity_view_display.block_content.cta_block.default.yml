@@ -8,9 +8,32 @@ dependencies:
     - field.field.block_content.cta_block.field_image
     - field.field.block_content.cta_block.field_link
   module:
+    - field_group
     - image
     - link
     - text
+third_party_settings:
+  field_group:
+    group_grid_container:
+      children:
+        - field_image
+        - body
+        - field_link
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: grid-container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: grid-container
 id: block_content.cta_block.default
 targetEntityType: block_content
 bundle: cta_block
@@ -19,7 +42,7 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 0
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
@@ -33,7 +56,7 @@ content:
     type: image
     region: content
   field_link:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       trim_length: 80

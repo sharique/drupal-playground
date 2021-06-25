@@ -2,11 +2,13 @@ nav {
   ul.menu {
     a {
       color: $white;
+      line-height: 20px;
+      padding: 0 25px;
     }
     a.is-active,
     a:hover {
       color: $yellow;
-    } 
+    }
   }
 }
 

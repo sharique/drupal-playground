@@ -18,3 +18,27 @@ function fe_okr_preprocess_block__system_branding_block(&$variables) {
 function fe_okr_preprocess_block__system_menu_block(&$variables) {
   $variables['attributes']['class'][] = "menu cell small-9 align-right";
 }
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function fe_okr_preprocess_block(&$variables) {
+
+  // adding custom attribute class for block
+  if ($variables['elements']['#base_plugin_id'] == 'block_content') {
+    $blockType = strtr($variables['content']['#block_content']->bundle(), '_', '-');
+    if (isset($variables['elements']['#configuration']['view_mode'])) {
+      $blockType .= ' ' . $variables['elements']['#configuration']['view_mode'];
+    }
+    $variables['attributes']['class'][] = 'block-type-' . $blockType;
+  }
+}
+
+/**
+ * Implements hook_editor_js_settings_alter().
+ */
+function fe_okr_editor_js_settings_alter(array &$settings) {
+  foreach ($settings['editor']['formats'] as $name => $value) {
+    $settings['editor']['formats'][$name]['editorSettings']['autoParagraph'] = FALSE;
+  }
+}
