@@ -1,0 +1,25 @@
+uuid: e5d4e6c6-6e1f-4fd8-9a95-6d435f8fb5ce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:contact_form:4cd502cb-6d4a-4f3e-ad65-f4e44158baa3'
+  module:
+    - block_content
+  theme:
+    - fe_okr
+id: contactnow
+theme: fe_okr
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:4cd502cb-6d4a-4f3e-ad65-f4e44158baa3'
+settings:
+  id: 'block_content:4cd502cb-6d4a-4f3e-ad65-f4e44158baa3'
+  label: 'Contact Now'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

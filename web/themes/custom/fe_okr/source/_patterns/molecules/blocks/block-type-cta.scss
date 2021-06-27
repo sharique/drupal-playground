@@ -1,6 +1,6 @@
 .block-type-cta-block {
   &.two_column {
-    background: #0c0f38;
+    background: $purpule;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     padding-bottom: 90px;
@@ -28,8 +28,8 @@
   }
   a {
     font-size: 16px;
-    background-color: #fff;
-    color: #000;
+    background-color: $white;
+    color: $black;
     padding: 10px 0px;
     width: 100%;
     max-width: 190px;
@@ -56,7 +56,35 @@
     }
     a {
       font-size: 16px;
-      background-color: #000;
+      background-color: $black;
+      color: $white;
+      padding: 10px 0px;
+      width: 100%;
+      max-width: 190px;
+      text-align: center;
+      display: inline-block;
+      text-transform: uppercase;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+
+  &.cta {
+    text-align: center;
+    padding: 80px 0;
+    background: $cta_bg;
+    h2 {
+      color: $white;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    p{
+      padding: 0;
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: 16px;
+      background-color: $black;
       color: $white;
       padding: 10px 0px;
       width: 100%;

@@ -1,0 +1,60 @@
+uuid: 1d2f7b92-9321-444f-b295-86ef3af13b94
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_form
+    - field.field.block_content.contact_form.body
+    - field.field.block_content.contact_form.field_form
+    - field.field.block_content.contact_form.field_heading
+  module:
+    - text
+id: block_content.contact_form.default
+targetEntityType: block_content
+bundle: contact_form
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+    region: content
+  field_form:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_heading:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }

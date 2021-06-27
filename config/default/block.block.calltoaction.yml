@@ -1,0 +1,30 @@
+uuid: 4736009a-25dd-490f-b5b3-e87261c40363
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:cta_block:80acf43d-8be3-4fe9-a466-998f4c60a523'
+  module:
+    - block_content
+    - system
+  theme:
+    - fe_okr
+id: calltoaction
+theme: fe_okr
+region: content
+weight: -2
+provider: null
+plugin: 'block_content:80acf43d-8be3-4fe9-a466-998f4c60a523'
+settings:
+  id: 'block_content:80acf43d-8be3-4fe9-a466-998f4c60a523'
+  label: 'Call To Action'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: cta
+visibility:
+  request_path:
+    id: request_path
+    pages: /service
+    negate: false

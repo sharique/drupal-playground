@@ -1,0 +1,172 @@
+uuid: 116d052c-e8ab-4ea1-910f-e43a0fe36791
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.contact_form
+    - field.field.block_content.contact_form.body
+    - field.field.block_content.contact_form.field_form
+    - field.field.block_content.contact_form.field_heading
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_grid_x_grid_margin_x:
+      children:
+        - group_form_wrapper
+      parent_name: group_grid_container_form
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'grid-x grid-margin-x'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'grid-x grid-margin-x'
+    group_form_wrapper:
+      children:
+        - field_form
+      parent_name: group_grid_x_grid_margin_x
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: 'cell medium-6 medium-offset-3 form-block-wrapper'
+      label: 'Form wrapper'
+    group_form_description_wrapper:
+      children:
+        - group_grid_container
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      region: content
+      format_settings:
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: form-description-wrapper
+      label: 'Form Description wrapper'
+    group_grid_container:
+      children:
+        - group_desc_grid_x_grid_margin_x
+      parent_name: group_form_description_wrapper
+      weight: 2
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: grid-container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: grid-container
+    group_desc_grid_x_grid_margin_x:
+      children:
+        - group_form_desc_offset
+      parent_name: group_grid_container
+      weight: 3
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'grid-x grid-margin-x'
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Description grid-x grid-margin-x'
+    group_grid_container_form:
+      children:
+        - group_grid_x_grid_margin_x
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: grid-container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: grid-container-form
+    group_form_desc_offset:
+      children:
+        - field_heading
+        - body
+      parent_name: group_desc_grid_x_grid_margin_x
+      weight: 20
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: 'cell medium-10 medium-offset-1 '
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Form desc offset'
+id: block_content.contact_form.default
+targetEntityType: block_content
+bundle: contact_form
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_form:
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_heading:
+    weight: 21
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true
