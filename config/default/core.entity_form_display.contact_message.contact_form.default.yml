@@ -1,0 +1,52 @@
+uuid: 441b5710-516a-4f2a-8d00-b6f88ef9506b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_form
+    - field.field.contact_message.contact_form.field_email
+    - field.field.contact_message.contact_form.field_name
+    - field.field.contact_message.contact_form.field_phone
+id: contact_message.contact_form.default
+targetEntityType: contact_message
+bundle: contact_form
+mode: default
+content:
+  field_email:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: Email
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: Name
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 2
+    settings:
+      placeholder: Phone
+    third_party_settings: {  }
+    type: number
+    region: content
+  message:
+    type: string_textarea
+    weight: 3
+    settings:
+      rows: 2
+      placeholder: Message
+    region: content
+    third_party_settings: {  }
+hidden:
+  copy: true
+  langcode: true
+  mail: true
+  name: true
+  preview: true
+  subject: true

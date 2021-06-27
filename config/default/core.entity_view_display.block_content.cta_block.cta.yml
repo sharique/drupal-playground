@@ -1,0 +1,62 @@
+uuid: d2a0bd1b-05b2-4d5c-93c3-3be284f3cdb3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.cta_block
+    - core.entity_view_mode.block_content.cta
+    - field.field.block_content.cta_block.body
+    - field.field.block_content.cta_block.field_image
+    - field.field.block_content.cta_block.field_link
+  module:
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_grid_container:
+      children:
+        - body
+        - field_link
+      parent_name: ''
+      weight: 0
+      format_type: html_element
+      region: content
+      format_settings:
+        id: ''
+        classes: grid-container
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        attributes: ''
+        effect: none
+        speed: fast
+      label: grid-container
+id: block_content.cta_block.cta
+targetEntityType: block_content
+bundle: cta_block
+mode: cta
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_image: true
+  langcode: true

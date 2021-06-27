@@ -1,0 +1,18 @@
+uuid: bc5c78ec-f325-47ae-badc-b22d9d7fce4a
+langcode: en
+status: false
+dependencies:
+  module:
+    - contact_storage
+third_party_settings:
+  contact_storage:
+    disabled_form_message: 'This contact form has been disabled.'
+_core:
+  default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
+id: personal
+label: 'Personal contact form'
+recipients: {  }
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''

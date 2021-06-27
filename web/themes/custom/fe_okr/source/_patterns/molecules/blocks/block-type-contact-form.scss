@@ -1,0 +1,77 @@
+.block-type-contact-form {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 90px;
+  .form-block-wrapper {
+    background: $purpule;
+    padding: 40px 55px 55px 55px;
+    border-radius: 30px;
+    margin-bottom: -30%;
+    input {
+      border: $white solid 1px;
+      padding: 0px 19px;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      width: 100%;
+      height: 52px;
+      background: $white;
+      color: $grey;
+      font-size: 16px;
+    }
+    label {
+      display: none;
+    }
+    textarea {
+      margin-bottom: 25px;
+      padding: 0px 19px;
+      color: $grey !important;
+      width: 100%;
+      border: $white solid 1px;
+      border-radius: 15px;
+      padding-top: 38px;
+      background: $white;
+    }
+    .form-submit {
+      font-size: 16px;
+      transition: ease-in all 0.5s;
+      background-color: $white;
+      color: $red;
+      padding: 12px 70px;
+      margin: 0 auto;
+      display: block;
+      border-radius: 30px;
+      width: auto;
+    }
+  }
+
+  .form-description-wrapper {
+    text-align: center;
+    background: $purpule;
+    .cell {
+      margin-top: 31%;
+    }
+    .field--name-field-heading {
+      color: $white;
+      font-size: 45px;
+      line-height: 30px;
+      font-weight: bold;
+      padding: 30px 0px 0px 0px;
+    }
+    .field--name-body {
+      div {
+        color: $white;
+        font-size: 30px;
+        line-height: 30px;
+        padding: 30px 0px 30px 0px;
+        display: inline-block;
+        font-weight: bold;
+      }
+    }
+    p {
+      color: $white;
+      font-size: 17px;
+      line-height: 30px;
+      padding: 0 130px;
+      padding-bottom: 54px;
+    }
+  }
+}

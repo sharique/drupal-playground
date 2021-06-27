@@ -1,0 +1,10 @@
+uuid: 47b051d2-99d7-4c10-8bc6-227078b8e67e
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.cta
+label: CTA
+targetEntityType: block_content
+cache: true
