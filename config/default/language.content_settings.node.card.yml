@@ -1,0 +1,11 @@
+uuid: 40505fe4-41ab-4d35-9507-bc3247a23e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.card
+id: node.card
+target_entity_type_id: node
+target_bundle: card
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: dbfdacc6-5a47-4d4d-abac-f4eea11a376c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Card
+type: card
+description: 'Card can be used for many purposes.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

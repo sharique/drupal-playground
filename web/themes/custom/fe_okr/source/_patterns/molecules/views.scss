@@ -40,7 +40,7 @@
   }
 }
 
-.views-element-container{
+.views-element-container {
   padding: 60px 0;
 }
 
@@ -57,6 +57,13 @@
     h3 {
       font-weight: 700;
     }
+    .testimonial-image {
+      width: 90px;
+      border-radius: 10px;
+      border: 6px solid #fff;
+      position: absolute;
+      left: -15px;
+    }
   }
 }
 
@@ -67,5 +74,45 @@
   }
   .owl-page.active span {
     background-color: $red;
+  }
+}
+
+.block-views-blockcards-block-1 {
+  .views-row {
+    padding: 25px;
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0,0.1);
+    .views-field-title a {
+      font-size: 42px;
+      font-weight: 700;
+      color: $black;
+    }
+
+    .views-field-view-node {
+      padding-top: 1rem;
+      a {
+        columns: $dark_blue;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.block-views-blockcards-block-2 {
+  .view-header {
+    font-weight: 600;
+    padding-bottom: 40px;
+  }
+  .views-row{
+    padding: 40px;
+    margin-bottom: 30px;
+    font-weight:400 ;
+    .views-field {
+      padding: 10px 0;
+    }
+    .views-field-title a {
+      font-size: 24px;
+      font-weight: 700;
+      color: $black;
+    }
   }
 }

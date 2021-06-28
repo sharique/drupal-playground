@@ -61,9 +61,9 @@ display:
       style:
         type: owlcarousel
         options:
-          grouping: {  }
           row_class: ''
           default_row_class: true
+          uses_fields: false
           items: '2'
           itemsDesktop: '[1199,4]'
           itemsDesktopSmall: '[979,3]'
@@ -74,7 +74,7 @@ display:
           slideSpeed: '200'
           paginationSpeed: '800'
           rewindSpeed: '1000'
-          autoPlay: 0
+          autoPlay: 1
           stopOnHover: 0
           navigation: 0
           prevText: prev

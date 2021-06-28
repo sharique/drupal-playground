@@ -1,0 +1,29 @@
+uuid: 0229f45b-4d66-43d6-acaa-0fe05dc76e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.cards
+  module:
+    - system
+    - views
+  theme:
+    - fe_okr
+id: views_block__cards_block_2
+theme: fe_okr
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:cards-block_2'
+settings:
+  id: 'views_block:cards-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false

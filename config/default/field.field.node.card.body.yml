@@ -1,0 +1,23 @@
+uuid: bab5e27c-02df-4a70-8950-7b8fe8b397b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.card
+  module:
+    - text
+id: node.card.body
+field_name: body
+entity_type: node
+bundle: card
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary
