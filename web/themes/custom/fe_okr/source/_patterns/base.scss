@@ -8,9 +8,15 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 }
+
 .grid-container {
+  max-width: 1320px;
+}
+
+.path-frontpage .grid-container {
   max-width: 1140px;
 }
+
 h3{
   font-size: 20px;
   font-weight: 500;
@@ -20,4 +26,7 @@ p {
   font-weight: 300;
   font-size: 15px;
   line-height: 24px;
+}
+li {
+  list-style: none;
 }

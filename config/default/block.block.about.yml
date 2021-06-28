@@ -1,0 +1,30 @@
+uuid: 8f6caf51-d338-4180-a2f6-44bee6d99267
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_block:73081674-eda8-44ad-a23f-f5b2862db4a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - fe_okr
+id: about
+theme: fe_okr
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:73081674-eda8-44ad-a23f-f5b2862db4a8'
+settings:
+  id: 'block_content:73081674-eda8-44ad-a23f-f5b2862db4a8'
+  label: About
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /about
+    negate: false

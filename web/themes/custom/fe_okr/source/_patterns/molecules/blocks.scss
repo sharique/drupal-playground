@@ -1,0 +1,58 @@
+.block-type-custom-block {
+  i {
+    color: $cta_bg !important;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .web_hosting {
+    text-align: center;
+  }
+  h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    line-height: 1px;
+    margin: 0 0 15px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $silver;
+    font-family: "Poppins", sans-serif;
+
+    &:after {
+      content: "";
+      width: 120px;
+      height: 1px;
+      display: inline-block;
+      background: $red_line;
+      margin: 4px 10px;
+    }
+    }
+  .text-column {
+    margin: 0;
+    &:nth-of-type(2) {
+      padding-left: 24px;
+    }
+    ul {
+      margin: 0;
+
+      li {
+        margin-top: 10px;
+        position: relative;
+        padding-left: 28px;
+      }
+    }
+  }
+}
+.field--name-field-sub-heading {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: $zodiac_blue;
+  line-height: 24px;
+  padding-bottom: 40px;
+}

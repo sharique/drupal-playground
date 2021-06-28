@@ -1,5 +1,5 @@
 .block-type-cta-block {
-  &.two_column {
+  &.view-mode-two_column {
     background: $purpule;
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
     text-transform: uppercase;
   }
 
-  &.default {
+  &.view-mode-default {
     padding-top: 90px;
     text-align: center;
     h2 {
@@ -69,7 +69,7 @@
     }
   }
 
-  &.cta {
+  &.view-mode-cta {
     text-align: center;
     padding: 80px 0;
     background: $cta_bg;
