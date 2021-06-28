@@ -1,0 +1,15 @@
+a {
+  &.button {
+    font-size: 16px;
+    background-color: $black;
+    color: $white;
+    padding: 10px 0px;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 10px;
+  }
+}

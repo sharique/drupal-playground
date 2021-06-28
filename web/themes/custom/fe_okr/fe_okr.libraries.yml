@@ -3,3 +3,16 @@ global:
     base:
       css/foundation.css: {}
       css/style.css: {}
+  dependencies:
+    - fe_okr/remixicon
+
+remixicon:
+  remote: https://github.com/Remix-Design/RemixIcon
+  version: 2.5.0
+  license:
+    name: MIT
+    url: https://github.com/Remix-Design/RemixIcon/blob/master/License
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.min.css: { type: external, minified: true }

@@ -28,9 +28,12 @@ function fe_okr_preprocess_block(&$variables) {
   if ($variables['elements']['#base_plugin_id'] == 'block_content') {
     $blockType = strtr($variables['content']['#block_content']->bundle(), '_', '-');
     if (isset($variables['elements']['#configuration']['view_mode'])) {
-      $blockType .= ' ' . $variables['elements']['#configuration']['view_mode'];
+      $blockType .= ' ' . 'view-mode-' . $variables['elements']['#configuration']['view_mode'];
     }
     $variables['attributes']['class'][] = 'block-type-' . $blockType;
+    if ($variables['content']['#block_content']->bundle() == "custom_block") {
+      $variables['attributes']['class'][] = 'grid-container';
+    }
   }
 }
 
