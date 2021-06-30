@@ -1,0 +1,25 @@
+uuid: 590c3d75-7372-4db2-aca9-d2febd8de8a4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:custom_block:f80b05d1-501c-43d4-815b-9ca7d59f4c26'
+  module:
+    - block_content
+  theme:
+    - fe_okr
+id: footerinfoblock
+theme: fe_okr
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:f80b05d1-501c-43d4-815b-9ca7d59f4c26'
+settings:
+  id: 'block_content:f80b05d1-501c-43d4-815b-9ca7d59f4c26'
+  label: 'Footer info block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
