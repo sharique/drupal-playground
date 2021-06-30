@@ -3,6 +3,8 @@ global:
     base:
       css/foundation.css: {}
       css/style.css: {}
+  js:
+    js/custom.js: {}
   dependencies:
     - fe_okr/remixicon
     - fe_okr/isotope
