@@ -8,7 +8,7 @@
     margin-bottom: 30px;
     text-align: center;
     &:hover {
-      background-color: #8308eb;
+      background-color: $cta_bg;
     }
     .views-field-field-image {
       padding-left: 6rem;
@@ -22,6 +22,14 @@
     }
     .views-field-title {
       line-height: 25px;
+      padding: 15px 0;
+    }
+  }
+  .view-footer {
+    .button{
+      background: $white;
+      color: $black;
+      text-transform: capitalize;
     }
   }
 }
@@ -114,5 +122,19 @@
       font-weight: 700;
       color: $black;
     }
+  }
+}
+
+.card.why-box {
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 40px 20px 20px 20px;
+  transition: ease-in all 0.5s;
+  margin-bottom: 30px;
+  box-shadow: #ddd 0px 0px 10px;
+  width: 120%;
+  &:hover{
+    transition: ease-in all 0.1s;
+    transform: scale(1.1);
   }
 }

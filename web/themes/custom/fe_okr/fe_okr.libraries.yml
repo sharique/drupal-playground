@@ -5,6 +5,7 @@ global:
       css/style.css: {}
   dependencies:
     - fe_okr/remixicon
+    - fe_okr/isotope
 
 remixicon:
   remote: https://github.com/Remix-Design/RemixIcon
@@ -16,3 +17,13 @@ remixicon:
   css:
     theme:
       https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.min.css: { type: external, minified: true }
+
+isotope:
+  remote: https://github.com/metafizzy/isotope
+  version: 3.0.5
+  license:
+    name: GPLv3
+    url: https://isotope.metafizzy.co/license.html
+    gpl-compatible: true
+  js:
+    https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js: { type: external, minified: true }
