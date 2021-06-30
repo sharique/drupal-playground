@@ -34,6 +34,25 @@
   }
 }
 
+.view-id-services.view-display-id-page_1 {
+  .row-container:hover .portfolio-info{
+    opacity: 1;
+  }
+  .portfolio-info {
+    margin: 0 30px;
+    opacity: 0;
+    position: relative;
+    bottom: 110px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+  }
+  .portfolio-links {
+    padding: 16px 0;
+  }
+}
+
 .view-header {
   padding-bottom: 30px;
   h2 {
@@ -44,7 +63,7 @@
     font-weight: 500;
     color: $silver;
     text-transform: uppercase;
-
+    letter-spacing: 2px;
     &::after {
       content: "";
       width: 120px;

@@ -32,18 +32,24 @@
  */
 #}
 
-<div class="card why-box">
+<div>
 	<div class="views-field views-field-field-image">
 		<div class="field-content">
 			{{ fields.field_image.content}}
 		</div>
 	</div>
-	<h3>
-		{{ fields.title.content}}
-	</h3>
-	{{ fields.body.content}}
-
+	<div class="portfolio-info clearfix">
+		<div class="float-left">
+			<h4>
+				{{ fields.title.content }}
+			</h4>
+			<p>
+				{{ fields.field_tags.content }}
+			</p>
+		</div>
+		<div class="float-right portfolio-links">
+			<i class="ri-add-line"></i>
+			<i class="ri-links-line"></i>
+		</div>
+	</div>
 </div>
-<span class="black-button button">
-	{{ fields.view_node.content }}
-</span>
