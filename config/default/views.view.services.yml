@@ -11,6 +11,7 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.tags
   module:
+    - colorbox
     - image
     - node
     - taxonomy
@@ -407,10 +408,15 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: colorbox
           settings:
-            image_style: large
-            image_link: ''
+            colorbox_node_style: large
+            colorbox_node_style_first: ''
+            colorbox_image_style: ''
+            colorbox_gallery: page
+            colorbox_gallery_custom: ''
+            colorbox_caption: entity_title
+            colorbox_caption_custom: ''
           group_column: ''
           group_columns: {  }
           group_rows: true

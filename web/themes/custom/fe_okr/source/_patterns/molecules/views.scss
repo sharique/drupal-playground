@@ -26,7 +26,7 @@
     }
   }
   .view-footer {
-    .button{
+    .button {
       background: $white;
       color: $black;
       text-transform: capitalize;
@@ -36,11 +36,15 @@
 
 .view-header {
   padding-bottom: 30px;
-  h2{
+  h2 {
     font-weight: 600;
   }
   h6 {
     font-size: 14px;
+    font-weight: 500;
+    color: $silver;
+    text-transform: uppercase;
+
     &::after {
       content: "";
       width: 120px;
@@ -63,6 +67,16 @@
     background: #fff;
     padding: 2rem;
     margin: 2rem;
+    .ri-double-quotes-l {
+      position: relative;
+      top: 1.5rem;
+      left: -1.2rem;
+    }
+    .ri-double-quotes-r {
+      position: relative;
+      top: -1.5rem;
+      left: 18rem;
+    }
     .job-title {
       color: $grey;
     }
@@ -92,7 +106,7 @@
 .block-views-blockcards-block-1 {
   .views-row {
     padding: 25px;
-    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0,0.1);
+    box-shadow: -10px -5px 40px 0 rgba(0, 0, 0, 0.1);
     .views-field-title a {
       font-size: 42px;
       font-weight: 700;
@@ -110,10 +124,10 @@
 }
 
 .block-views-blockcards-block-2 {
-  .views-row{
+  .views-row {
     padding: 40px;
     margin-bottom: 30px;
-    font-weight:400 ;
+    font-weight: 400;
     .views-field {
       padding: 10px 0;
     }
@@ -133,7 +147,7 @@
   margin-bottom: 30px;
   box-shadow: #ddd 0px 0px 10px;
   width: 120%;
-  &:hover{
+  &:hover {
     transition: ease-in all 0.1s;
     transform: scale(1.1);
   }
