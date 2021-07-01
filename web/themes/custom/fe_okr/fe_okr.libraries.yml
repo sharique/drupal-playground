@@ -5,6 +5,7 @@ global:
       css/style.css: {}
   js:
     js/custom.js: {}
+    js/foundation.js: {}
   dependencies:
     - fe_okr/remixicon
     - fe_okr/isotope

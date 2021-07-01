@@ -35,7 +35,7 @@
 }
 
 .view-id-services.view-display-id-page_1 {
-  .row-container:hover .portfolio-info{
+  .row-container:hover .portfolio-info {
     opacity: 1;
   }
   .portfolio-info {
@@ -139,6 +139,10 @@
         font-weight: 600;
       }
     }
+  }
+  [class*=" ri-"], [class^=ri-] {
+    font-size: 35px;
+    color: $cta_bg;
   }
 }
 
