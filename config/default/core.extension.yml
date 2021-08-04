@@ -8,6 +8,7 @@ module:
   ckeditor: 0
   colorbox: 0
   config: 0
+  config_split: 0
   contact: 0
   contact_storage: 0
   datetime: 0
@@ -23,6 +24,7 @@ module:
   language: 0
   link: 0
   media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   node: 0
@@ -31,6 +33,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  responsive_image: 0
   system: 0
   taxonomy: 0
   text: 0
