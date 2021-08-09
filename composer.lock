@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d65c6e27faef576381f859b4d768eebb",
+    "content-hash": "094ec2f613ad2dfbc9c4566dd5a99aae",
     "packages": [
         {
             "name": "acquia/blt",
@@ -2391,6 +2391,52 @@
             }
         },
         {
+            "name": "drupal/component",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/component.git",
+                "reference": "1.0.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/component-1.0.0-rc3.zip",
+                "reference": "1.0.0-rc3",
+                "shasum": "fbce913910be7bf7a70ee82cffd1208d6a5d8ac0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-rc3",
+                    "datestamp": "1611794825",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ron Northcutt (rlnorthcutt)",
+                    "homepage": "https://www.drupal.org/u/rlnorthcutt",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Easily add JS components to Drupal as blocks, with only a single yml file.",
+            "homepage": "https://drupal.org/project/component",
+            "support": {
+                "source": "https://git.drupalcode.org/project/component",
+                "issues": "https://drupal.org/project/issues/component"
+            }
+        },
+        {
             "name": "drupal/config_split",
             "version": "2.0.0-beta2",
             "source": {
@@ -2962,6 +3008,110 @@
             "time": "2021-08-03T13:14:21+00:00"
         },
         {
+            "name": "drupal/decoupled_menus",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/decoupled_menus.git",
+                "reference": "1.0.0-beta1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/decoupled_menus-1.0.0-beta1.zip",
+                "reference": "1.0.0-beta1",
+                "shasum": "adcb7725410567f73d32ddd3d72a796ca194d40d"
+            },
+            "require": {
+                "drupal/core": "^9.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta1",
+                    "datestamp": "1616012302",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "gabesullice",
+                    "homepage": "https://www.drupal.org/user/2287430"
+                },
+                {
+                    "name": "nod_",
+                    "homepage": "https://www.drupal.org/user/598310"
+                }
+            ],
+            "description": "Provides decoupled menus",
+            "homepage": "https://www.drupal.org/project/decoupled_menus",
+            "support": {
+                "source": "https://git.drupalcode.org/project/decoupled_menus"
+            }
+        },
+        {
+            "name": "drupal/decoupled_router",
+            "version": "2.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/decoupled_router.git",
+                "reference": "2.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/decoupled_router-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "6a60f8013d36e21b8f71bfab8dc845558b1cb873"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/redirect": "^1.0@beta"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.2",
+                    "datestamp": "1608299754",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mateu Aguiló Bosch",
+                    "homepage": "https://www.drupal.org/user/103796",
+                    "email": "mateu.aguilo.bosch@gmail.com"
+                },
+                {
+                    "name": "e0ipso",
+                    "homepage": "https://www.drupal.org/user/550110"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                }
+            ],
+            "description": "Provides an endpoint that will help you resolve path aliases and redirects for entity related routes.",
+            "homepage": "https://www.drupal.org/project/decoupled_router",
+            "support": {
+                "source": "https://git.drupalcode.org/project/decoupled_router"
+            }
+        },
+        {
             "name": "drupal/devel",
             "version": "4.1.1",
             "source": {
@@ -3098,6 +3248,54 @@
             "homepage": "http://drupal.org/project/disqus",
             "support": {
                 "source": "https://git.drupalcode.org/project/disqus"
+            }
+        },
+        {
+            "name": "drupal/druxt",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/druxt.git",
+                "reference": "1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/druxt-1.0.2.zip",
+                "reference": "1.0.2",
+                "shasum": "982db58d3d1f9491250ee4c2c255b621feb5c9b0"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/decoupled_router": "^2.0",
+                "drupal/jsonapi_menu_items": "^1.0.0",
+                "drupal/jsonapi_views": "^1.0@beta"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.2",
+                    "datestamp": "1623037317",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Stuart Clark",
+                    "homepage": "https://www.drupal.org/user/103796",
+                    "email": "stuart@realityloop.com"
+                }
+            ],
+            "description": "A bridge between frameworks, Drupal in the back, Nuxt.js in the front.",
+            "homepage": "https://www.drupal.org/project/druxt",
+            "support": {
+                "source": "https://git.drupalcode.org/project/druxt"
             }
         },
         {
@@ -3586,6 +3784,59 @@
             ],
             "support": {
                 "source": "https://git.drupalcode.org/project/jsonapi_resources"
+            }
+        },
+        {
+            "name": "drupal/jsonapi_views",
+            "version": "1.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/jsonapi_views.git",
+                "reference": "8.x-1.0-beta3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/jsonapi_views-8.x-1.0-beta3.zip",
+                "reference": "8.x-1.0-beta3",
+                "shasum": "813219ddb4ab3aa3f3382a29dca14c558f173943"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9",
+                "drupal/jsonapi_resources": "^1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta3",
+                    "datestamp": "1623905514",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Deciphered",
+                    "homepage": "https://www.drupal.org/user/103796"
+                },
+                {
+                    "name": "pixelwhip",
+                    "homepage": "https://www.drupal.org/user/275292"
+                }
+            ],
+            "description": "This module creates custom JSON:API resources from Views.",
+            "homepage": "https://www.drupal.org/project/jsonapi_views",
+            "keywords": [
+                "Drupal",
+                "JSON API"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/jsonapi_views"
             }
         },
         {
@@ -11071,6 +11322,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/component": 5,
+        "drupal/decoupled_menus": 10,
         "drupal/gin_lb": 10,
         "drupal/gin_toolbar": 10,
         "drupal/owlcarousel": 10,

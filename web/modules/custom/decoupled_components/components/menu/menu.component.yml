@@ -1,0 +1,9 @@
+name: Menu component
+description: A simple decoupled menu component using vanilla js
+template: menu.htm
+js:
+  menu.js: {}
+form_configuration:
+  endpoint:
+    type: url
+    title: Menu endpoint

@@ -1,0 +1,11 @@
+name: Demo component
+description: A simple component demo
+template: demo.htm
+js:
+  demo.js: {}
+static_configuration:
+  title: 'Demo'
+form_configuration:
+  name:
+    type: textfield
+    title: Name
