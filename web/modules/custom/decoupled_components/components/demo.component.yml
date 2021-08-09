@@ -1,0 +1,13 @@
+name: Demo component
+description: A simple component demo
+template: demo.htm
+js:
+  demo.js: {}
+static_configuration:
+  title: 'Demo'
+  days:
+    - Monday
+    - Tuesday
+    - Sunday
+form_configuration:
+  name: 'value'

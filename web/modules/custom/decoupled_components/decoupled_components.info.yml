@@ -1,0 +1,7 @@
+name: Decoupled components
+type: module
+description: Example module with decoupled components
+dependencies:
+  - component
+package: Example
+core_version_requirement: ^8.8 || ^9
