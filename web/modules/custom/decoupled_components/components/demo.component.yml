@@ -5,9 +5,7 @@ js:
   demo.js: {}
 static_configuration:
   title: 'Demo'
-  days:
-    - Monday
-    - Tuesday
-    - Sunday
 form_configuration:
-  name: 'value'
+  name:
+    type: textfield
+    title: Name
