@@ -3,5 +3,6 @@ type: module
 description: Example module with decoupled components
 dependencies:
   - component
+  - decoupled_menus
 package: Example
 core_version_requirement: ^8.8 || ^9
