@@ -1,0 +1,15 @@
+name: GDWC Menu component
+description: A simple decoupled menu component using Generic Drupal web component
+template: menu.htm
+js:
+  menu.js: {}
+form_configuration:
+  endpoint:
+    type: url
+    title: Site base url
+  branding:
+    type: textfield
+    title: Menu block title
+  menu:
+    type: textfield
+    title: Machine name of the menu to display
