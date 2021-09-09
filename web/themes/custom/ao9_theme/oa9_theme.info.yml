@@ -1,0 +1,8 @@
+name: New OA theme
+description: "New theme for OpenAhmed.com"
+type: theme
+base theme: classy
+core_version_requirement: ^9
+
+libraries:
+ - oa9_theme/global

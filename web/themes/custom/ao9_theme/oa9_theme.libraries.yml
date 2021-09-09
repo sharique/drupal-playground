@@ -1,0 +1,21 @@
+global:
+  css:
+    base:
+      css/style.css: {}
+  js:
+    js/custom.js: {}
+  dependencies:
+    - fe_okr/foundation
+
+foundation:
+  remote: https://github.com/foundation/foundation-sites
+  version: 6.7.1
+  license:
+    name: MIT
+    url: https://github.com/foundation/foundation-sites/blob/develop/LICENSE
+    gpl-compatible: true
+  css:
+    theme:
+      https://cdn.jsdelivr.net/npm/foundation-sites@6.7.1/dist/css/foundation.min.css: { type: external, minified: true }
+  js:
+    https://cdn.jsdelivr.net/npm/foundation-sites@6.7.1/dist/js/foundation.min.js: { type: external, minified: true }

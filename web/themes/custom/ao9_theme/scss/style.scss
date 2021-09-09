@@ -1,0 +1,9 @@
+@import './atom/colors.scss';
+
+body{
+  background-color: $bgColor;
+}
+
+h1{
+  color: $headingColor;
+}
