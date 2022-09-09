@@ -18,12 +18,12 @@ plugin: 'views_block:testimonials-block_1'
 settings:
   id: 'views_block:testimonials-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /service
     negate: false
+    pages: /service

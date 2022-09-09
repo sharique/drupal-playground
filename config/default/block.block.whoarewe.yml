@@ -18,13 +18,13 @@ plugin: 'block_content:8fc2ba67-d0e0-4bf1-b411-6d5d48ecb75e'
 settings:
   id: 'block_content:8fc2ba67-d0e0-4bf1-b411-6d5d48ecb75e'
   label: 'Who are we ?'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: default
 visibility:
   request_path:
     id: request_path
-    pages: /about
     negate: false
+    pages: /about

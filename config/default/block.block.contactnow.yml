@@ -17,8 +17,8 @@ plugin: 'block_content:4cd502cb-6d4a-4f3e-ad65-f4e44158baa3'
 settings:
   id: 'block_content:4cd502cb-6d4a-4f3e-ad65-f4e44158baa3'
   label: 'Contact Now'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

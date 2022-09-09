@@ -3,6 +3,8 @@ recipe: drupal9
 config:
   webroot: web
   php: '8.0'
+  database: mariadb:10.6
+  composer_version: 2-latest
 services:
   appserver:
     xdebug: "debug"

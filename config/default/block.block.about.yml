@@ -18,13 +18,13 @@ plugin: 'block_content:73081674-eda8-44ad-a23f-f5b2862db4a8'
 settings:
   id: 'block_content:73081674-eda8-44ad-a23f-f5b2862db4a8'
   label: About
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /about
     negate: false
+    pages: /about

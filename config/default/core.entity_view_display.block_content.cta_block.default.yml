@@ -19,13 +19,14 @@ third_party_settings:
         - field_image
         - body
         - field_link
+      label: grid-container
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: grid-container
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -33,30 +34,29 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: grid-container
 id: block_content.cta_block.default
 targetEntityType: block_content
 bundle: cta_block
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 2
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: content
   field_image:
-    weight: 1
+    type: image
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: content
   field_link:
-    weight: 3
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -65,7 +65,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    weight: 3
     region: content
 hidden:
   langcode: true

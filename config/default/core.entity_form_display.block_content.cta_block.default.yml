@@ -20,29 +20,29 @@ content:
   body:
     type: text_textarea_with_summary
     weight: 3
+    region: content
     settings:
       rows: 9
       summary_rows: 3
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-    region: content
   field_image:
+    type: image_image
     weight: 4
+    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-    type: image_image
-    region: content
   field_link:
+    type: link_default
     weight: 5
+    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-    type: link_default
-    region: content
   info:
     type: string_textfield
     weight: 0

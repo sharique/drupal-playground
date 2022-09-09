@@ -19,11 +19,14 @@ third_party_settings:
       children:
         - group_div_col_5
         - group_div_col_7
+      label: 'grid-x grid-margin-x'
       parent_name: group_grid_container
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
+        classes: 'grid-x grid-margin-x'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -31,18 +34,18 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'grid-x grid-margin-x'
-      label: 'grid-x grid-margin-x'
     group_div_col_5:
       children:
         - body
         - field_link
+      label: 'small-5 cell'
       parent_name: group_div_row
+      region: content
       weight: 21
       format_type: html_element
-      region: content
       format_settings:
+        classes: 'small-5 cell'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -50,17 +53,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'small-5 cell'
-      label: 'small-5 cell'
     group_div_col_7:
       children:
         - field_image
+      label: 'small-7 cell'
       parent_name: group_div_row
+      region: content
       weight: 22
       format_type: html_element
-      region: content
       format_settings:
+        classes: 'small-7 cell'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -68,19 +71,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'small-7 cell'
-      label: 'small-7 cell'
     group_grid_container:
       children:
         - group_div_row
+      label: grid-container
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: grid-container
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -88,32 +89,29 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: grid-container
 id: block_content.cta_block.two_column
 targetEntityType: block_content
 bundle: cta_block
 mode: two_column
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 21
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 21
     region: content
   field_image:
     type: image
-    weight: 22
-    region: content
     label: hidden
     settings:
-      image_style: ''
       image_link: ''
+      image_style: ''
     third_party_settings: {  }
-  field_link:
-    type: link
     weight: 22
     region: content
+  field_link:
+    type: link
     label: hidden
     settings:
       trim_length: 80
@@ -122,5 +120,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
+    weight: 22
+    region: content
 hidden:
   langcode: true

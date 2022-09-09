@@ -2,11 +2,11 @@ uuid: c8951a32-a047-4a92-bf87-e7258189d1ef
 langcode: en
 status: true
 dependencies:
+  module:
+    - contact
   enforced:
     module:
       - contact_storage
-  module:
-    - contact
 _core:
   default_config_hash: ugOcAZ_g8S26-iGCjTlbSpuxDahvhMV5FYi0jNsn1rk
 id: contact_message_delete_action

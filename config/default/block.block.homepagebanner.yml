@@ -18,13 +18,13 @@ plugin: 'block_content:f7170a5e-e002-40ae-8722-13ddb82ca9fd'
 settings:
   id: 'block_content:f7170a5e-e002-40ae-8722-13ddb82ca9fd'
   label: 'Homepage Banner'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: two_column
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

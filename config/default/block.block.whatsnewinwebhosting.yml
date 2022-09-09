@@ -18,13 +18,13 @@ plugin: 'block_content:f7f9ea2c-16c8-49d0-87cb-f2b7c7d0777a'
 settings:
   id: 'block_content:f7f9ea2c-16c8-49d0-87cb-f2b7c7d0777a'
   label: 'What’s New In Web Hosting'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: default
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
+    pages: '<front>'

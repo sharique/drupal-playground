@@ -14,65 +14,65 @@ bundle: personal
 mode: default
 content:
   field_email:
-    weight: 2
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 2
     region: content
   field_message:
-    weight: 4
+    type: basic_string
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: basic_string
+    weight: 4
     region: content
   field_name:
-    weight: 1
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 1
     region: content
   field_phone:
-    weight: 3
+    type: number_integer
     label: above
     settings:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
-    type: number_integer
+    weight: 3
     region: content
   mail:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
     weight: -2
     region: content
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
   message:
     type: basic_string
-    weight: 0
     label: above
-    region: content
     settings: {  }
     third_party_settings: {  }
+    weight: 0
+    region: content
   name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: -3
     region: content
+  subject:
+    type: string
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
-  subject:
     weight: -1
     region: content
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
 hidden:
   langcode: true

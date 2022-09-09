@@ -15,13 +15,14 @@ third_party_settings:
     group_grid_x_grid_margin_x:
       children:
         - group_form_wrapper
+      label: 'grid-x grid-margin-x'
       parent_name: group_grid_container_form
+      region: content
       weight: 2
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'grid-x grid-margin-x'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -29,15 +30,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'grid-x grid-margin-x'
     group_form_wrapper:
       children:
         - field_form
+      label: 'Form wrapper'
       parent_name: group_grid_x_grid_margin_x
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
+        classes: 'cell medium-6 medium-offset-3 form-block-wrapper'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -45,17 +48,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: 'cell medium-6 medium-offset-3 form-block-wrapper'
-      label: 'Form wrapper'
     group_form_description_wrapper:
       children:
         - group_grid_container
+      label: 'Form Description wrapper'
       parent_name: ''
+      region: content
       weight: 1
       format_type: html_element
-      region: content
       format_settings:
+        classes: form-description-wrapper
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -63,19 +66,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-        id: ''
-        classes: form-description-wrapper
-      label: 'Form Description wrapper'
     group_grid_container:
       children:
         - group_desc_grid_x_grid_margin_x
+      label: grid-container
       parent_name: group_form_description_wrapper
+      region: content
       weight: 2
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: grid-container
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -83,17 +84,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: grid-container
     group_desc_grid_x_grid_margin_x:
       children:
         - group_form_desc_offset
+      label: 'Description grid-x grid-margin-x'
       parent_name: group_grid_container
+      region: content
       weight: 3
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'grid-x grid-margin-x'
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -101,17 +102,17 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Description grid-x grid-margin-x'
     group_grid_container_form:
       children:
         - group_grid_x_grid_margin_x
+      label: grid-container-form
       parent_name: ''
+      region: content
       weight: 0
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: grid-container
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -119,18 +120,18 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: grid-container-form
     group_form_desc_offset:
       children:
         - field_heading
         - body
+      label: 'Form desc offset'
       parent_name: group_desc_grid_x_grid_margin_x
+      region: content
       weight: 20
       format_type: html_element
-      region: content
       format_settings:
-        id: ''
         classes: 'cell medium-10 medium-offset-1 '
+        id: ''
         element: div
         show_label: false
         label_element: h3
@@ -138,35 +139,34 @@ third_party_settings:
         attributes: ''
         effect: none
         speed: fast
-      label: 'Form desc offset'
 id: block_content.contact_form.default
 targetEntityType: block_content
 bundle: contact_form
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 22
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 22
     region: content
   field_form:
-    weight: 5
+    type: entity_reference_entity_view
     label: hidden
     settings:
       view_mode: default
       link: false
     third_party_settings: {  }
-    type: entity_reference_entity_view
+    weight: 5
     region: content
   field_heading:
-    weight: 21
+    type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 21
     region: content
 hidden:
   langcode: true

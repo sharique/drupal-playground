@@ -1,3 +1,6 @@
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+langcode: en
 uuid: 9b81a442-4a1a-4be8-8f15-c2fddcbf83ce
 name: D9contrib
 mail: admin@example.com
@@ -8,7 +11,4 @@ page:
   front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
-langcode: en
 default_langcode: en
-_core:
-  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

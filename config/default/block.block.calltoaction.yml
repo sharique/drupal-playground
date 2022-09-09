@@ -18,13 +18,13 @@ plugin: 'block_content:80acf43d-8be3-4fe9-a466-998f4c60a523'
 settings:
   id: 'block_content:80acf43d-8be3-4fe9-a466-998f4c60a523'
   label: 'Call To Action'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: cta
 visibility:
   request_path:
     id: request_path
-    pages: /service
     negate: false
+    pages: /service
